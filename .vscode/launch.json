@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Typescript",
+      "request": "launch",
+      "type": "node",
+      "program": "${workspaceFolder}/${relativeFile}",
+      "cwd": "${workspaceFolder}",
+      "sourceMaps": true,
+      "smartStep": true,
+      "runtimeExecutable": "deno",
+      "preLaunchTask": "Yarn build",
+      "outFiles": ["${workspaceFolder/dist/**/*.js"],
+      "runtimeArgs": ["run", "--inspect", "--allow-all"]
+    }
+  ]
+}
