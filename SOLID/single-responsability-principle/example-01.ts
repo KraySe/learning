@@ -59,7 +59,7 @@ class OrderService {
 // CORRECT
 class OrderServiceSingleResponsability {
     public constructor(
-        private _mailService: MailService
+        private readonly _mailService: MailService
     ) { }
 
     public add(order: Order): void {

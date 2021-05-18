@@ -14,3 +14,7 @@
 ## Responsabilidad única
 
         - Una clase debe tener una razón para existir.
+
+# Principio de abierto - cerrado
+
+        - Las piezas del software deben estar abiertas para la extensión pero cerradas para la modificación.
