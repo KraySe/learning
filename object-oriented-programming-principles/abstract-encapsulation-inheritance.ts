@@ -1,6 +1,12 @@
-// Principio de abstracción
+// Principle of abstraction
 class Smartphone {
-    // Principio de encapsulamiento
+    /**
+     * encapsulation principle
+     * 
+     * - public
+     * - protected
+     * - private
+     */
     private color: string;
     private brand: string;
     private _battery: number;
@@ -29,7 +35,7 @@ class Smartphone {
     }
 }
 
-// Principio de Herencia
+// Inheritance principle
 class Android extends Smartphone {
     public constructor(color: string) {
         super(color, 'Android');
