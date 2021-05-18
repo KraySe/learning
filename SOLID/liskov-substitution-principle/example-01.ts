@@ -19,6 +19,27 @@ class Turtle extends Animal {
     }
 }
 
+// correct 
+class AnimalLiskov {
+    public walk(): void { }
+}
+
+class TigerLiskovOne extends AnimalLiskov {
+    public hunt(): void {
+
+    }
+    public run(): void {
+
+    }
+}
+
+class TurtleLiskovOne extends AnimalLiskov {
+
+}
+
+
+
+
 
 // correct
 interface IHunt {
