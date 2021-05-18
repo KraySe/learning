@@ -84,6 +84,7 @@ class MailService {
     }
 }
 
+// testing
 let smtp = new SmtpClient(),
     mailService = new MailService(smtp),
     mail = new OrderServiceSingleResponsability(mailService);
@@ -91,9 +92,3 @@ let smtp = new SmtpClient(),
 let order = new Order('curso TypeScript');
 
 mail.add(order);
-
-/************************************* ***************************************/
-// @TODO - CHALLENGE try pattern observer
-/************************************* ***************************************/
-
-

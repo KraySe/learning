@@ -18,3 +18,7 @@
 # Principio de abierto - cerrado
 
         - Las piezas del software deben estar abiertas para la extensión pero cerradas para la modificación.
+
+# Principio de sustitución de Liskov
+
+        - Las clases subtipos deberían ser reemplazables por sus clases padres.
