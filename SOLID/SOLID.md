@@ -22,3 +22,11 @@
 # Principio de sustitución de Liskov
 
         - Las clases subtipos deberían ser reemplazables por sus clases padres.
+
+# Principio de segregación de Interfaz
+
+        - Varias interfaces funcionan mejor que una sola. Divide y vencerás. Contratos simples.
+
+# Principio de inversión de dependencia
+
+        - Clases de alto nivel no deben depender de las clases de bajo nivel.
