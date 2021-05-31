@@ -87,6 +87,14 @@ print("hellow world")
 <!-- GITHUB MARKDOWN -->
 
 - [x] Task 1
-- [ ] Task 1
-- [ ] Task 1
-- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
+- [x] Task 4
+
+@ usuariotest
+
+github emojis
+
+:smiley: :+1:
+
+[cheatsheet MD](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
