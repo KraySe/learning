@@ -166,3 +166,69 @@ let {nombre: nombreCompleto, edad, genero, intereses} = personObject;
 
 console.log(nombreCompleto, edad, genero, intereses);
 ```
+
+### Spread
+
+Array:
+
+```typescript
+let nombres: string[] = ["Pedro", "Juan", "Luis"];
+let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let agrupar: any[] = ["Prueba", 100, ...nombres, ...numbers];
+```
+
+Object:
+
+```typescript
+let libro = {
+  autor: "Oscar",
+  titulo: "La perla perdida",
+  fecha: new Date(2020, 1, 4),
+};
+
+let vehiculo = {
+  color: "Negro",
+  puerta: "A3",
+  marca: "Toyota",
+};
+
+let agrupar2: any = {prueba: "Hola", ...libro, ...vehiculo};
+```
+
+## Valores opcionales y por defecto
+
+Opcionales, simbolo '?' :
+
+```typescript
+function getValues(object: {value1: string; value2?: number}) {
+  let {value1, value2} = object;
+  console.log(value1);
+  console.log(value2);
+}
+
+getValues({value1: "Camisea"});
+```
+
+Por defecto:
+
+```typescript
+function hello(text: string = "Hola1") {
+  console.log(text);
+}
+
+hello();
+```
+
+## Clase
+
+- Plantilla.
+- Características.
+- Comportamientos.
+
+## Objeto
+
+- Instancia de una clase.
+- Estado, valores o características de un objeto.
+- Comportamiento.
+- Identidad.
