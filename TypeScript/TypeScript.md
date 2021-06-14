@@ -76,3 +76,93 @@ Incluir y excluir directorios:
   "include": ["app/**/*"],
   "exclude": ["node_modules"]
 ```
+
+## Tipos de datos
+
+- Boolean.
+- Number.
+- String.
+- Array.
+- Tuples.
+- Enum.
+- Any.
+- Void.
+- Null.
+- Undefined.
+
+Castear variables:
+
+```typescript
+let value: any = "it is a string";
+let result: number = (<string>value).length;
+let result2: number = (value as string).length;
+```
+
+## Definir variables
+
+Palabras reservadas:
+
+- var (Alcance de manera global)
+- let (Alcance en un solo bloque, puede cambiar su valor)
+- const (Alcance en un solo bloque, no puede cambiar su valor)
+
+## Expresiones
+
+### Destructuring
+
+Array:
+
+```typescript
+let fruits: string[] = ["apple", "pineapple", "grape"];
+
+let [item1, item2, item3] = fruits;
+
+console.log(item1, item2, item3);
+
+let [, , value3] = fruits;
+
+console.log(value3);
+```
+
+Tuple:
+
+```typescript
+let person: [string[], number, string, string[]];
+person = [["Luis", "Narvaéz"], 24, "masculino", ["música", "lectura"]];
+
+let [nombre, edad, genero, intereses] = person;
+
+console.log(nombre[0], edad, genero, intereses[1]);
+
+let [, , , interes] = person;
+
+console.log(interes[0]);
+```
+
+Object:
+
+```typescript
+interface IPerson {
+  nombre: string[];
+  edad: number;
+  genero: string;
+  intereses: string[];
+}
+
+let personObject: IPerson = {
+  nombre: ["Luis", "Narvaéz"],
+  edad: 34,
+  genero: "masculino",
+  intereses: ["música", "lectura"],
+};
+
+let nombreObject: string[] = personObject.nombre;
+let edadObject: number = personObject.edad;
+
+console.log(nombreObject);
+console.log(edadObject);
+
+let {nombre: nombreCompleto, edad, genero, intereses} = personObject;
+
+console.log(nombreCompleto, edad, genero, intereses);
+```
